@@ -1,0 +1,40 @@
+server:
+  port: 8200
+  context-path: /web
+logging:
+  file: ./logs/web.log
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://172.16.11.111:3306/hpm?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useOldAliasMetadataBehavior=true
+      username: root
+      password: video
+
+  devtools:
+    restart:
+      #某些资源的更新不用触发重启
+      exclude: static/**,templates/**
+      #是否启用
+      enabled: false
+  jpa:
+    show-sql: true
+    hibernate:
+      dl-auto: none
+  jackson:
+    #格式化返回json中日期的格式
+    date-format: yyyy-MM-dd HH:mm:ss
+    #北京时区，默认为GMT,会少8个小时
+    time-zone:  GMT+8
+  thymeleaf:
+    cache: false
+    # 默认html5对格式非常严格，LEGACYHTML5配合nekohtml可解决这个问题
+    mode: LEGACYHTML5
+
+#自定义属性
+custom:
+  first_field: 1
+  seconde_field: 2
+
+
+
+

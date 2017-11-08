@@ -1,0 +1,23 @@
+{
+  "name": "XXXX接口文档",
+  "version": "1.0.0",
+  "description": "在这里添加详细描述",
+  "title": "XXXX接口文档",
+  "url": "http://xxx.xxx.xxx.xxx:8200",
+  "sampleUrl": "http://192.168.100.195:8200",
+  "order": [
+    
+  ],
+  "header": {
+    "title": "文档说明（必读）",
+    "filename": "apidoc/header.md"
+  },
+  "footer": {
+    "title": "附录",
+    "filename": "apidoc/footer.md"
+  },
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
