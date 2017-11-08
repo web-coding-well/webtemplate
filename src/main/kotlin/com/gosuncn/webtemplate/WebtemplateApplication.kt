@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Bean
 @SpringBootApplication
 class WebtemplateApplication {
 
-
     companion object {
         var logger: Logger = LoggerFactory.getLogger(this::class.java)
         @JvmStatic
