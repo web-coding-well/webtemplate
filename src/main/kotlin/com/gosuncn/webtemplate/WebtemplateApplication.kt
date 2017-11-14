@@ -5,6 +5,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.context.ApplicationContext
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
@@ -15,8 +16,9 @@ class WebtemplateApplication {
         @JvmStatic
         fun main(args: Array<String>) {
             logger.info("SpringApplication begin")
-            SpringApplication.run(WebtemplateApplication::class.java, *args)
+            var applicationContext: ApplicationContext = SpringApplication.run(WebtemplateApplication::class.java, *args)
             logger.info("SpringApplication end")
+
         }
     }
 

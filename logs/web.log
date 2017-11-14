@@ -1968,3 +1968,243 @@ org.thymeleaf.exceptions.ConfigurationException: Cannot perform conversion to XM
 2017-11-08 16:09:49.033  INFO 25128 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : QueryString= value1=&value2=&value3=&value4=&value5=&value6=&value7=&value8=
 2017-11-08 16:09:49.033  INFO 25128 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 2017-11-08 16:09:49.033  INFO 25128 --- [http-nio-8200-exec-1] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 10:57:23.957  INFO 147812 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Starting WebtemplateApplication.Companion on hwj-L470 with PID 147812 (G:\code\idea\webtemplate\out\production\classes started by HuWeiJian in G:\code\idea\webtemplate)
+2017-11-14 10:57:23.959  INFO 147812 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : No active profile set, falling back to default profiles: default
+2017-11-14 10:57:24.882  INFO 147812 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3766c138: startup date [Tue Nov 14 10:57:24 CST 2017]; root of context hierarchy
+2017-11-14 10:57:30.309  INFO 147812 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8200 (http)
+2017-11-14 10:57:30.323  INFO 147812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-14 10:57:30.324  INFO 147812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-14 10:57:30.502  INFO 147812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
+2017-11-14 10:57:30.502  INFO 147812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5625 ms
+2017-11-14 10:57:30.755  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-14 10:57:30.762  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-14 10:57:30.763  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-14 10:57:30.763  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-14 10:57:30.763  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-14 10:57:30.763  INFO 147812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-11-14 10:57:39.931  INFO 147812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-14 10:57:39.976  INFO 147812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-14 10:57:40.212  INFO 147812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-14 10:57:40.215  INFO 147812 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-14 10:57:40.217  INFO 147812 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-14 10:57:40.315  INFO 147812 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 10:57:40.871  INFO 147812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-14 10:57:41.493  INFO 147812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-14 10:57:42.185  INFO 147812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3766c138: startup date [Tue Nov 14 10:57:24 CST 2017]; root of context hierarchy
+2017-11-14 10:57:42.263  INFO 147812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gosuncn.webtemplate.web.IndexController.indexPage(org.springframework.ui.ModelMap)
+2017-11-14 10:57:42.264  INFO 147812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/{content}],methods=[GET]}" onto public com.gosuncn.webtemplate.bean.ApiResult<java.lang.String> com.gosuncn.webtemplate.web.TestController.test(java.lang.String)
+2017-11-14 10:57:42.266  INFO 147812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-14 10:57:42.266  INFO 147812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-14 10:57:42.317  INFO 147812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 10:57:42.318  INFO 147812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 10:57:42.340  INFO 147812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandler
+2017-11-14 10:57:42.404  INFO 147812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 10:57:43.167  INFO 147812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-11-14 10:57:43.311  INFO 147812 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-14 10:57:43.372  INFO 147812 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8200 (http)
+2017-11-14 10:57:43.380  INFO 147812 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : Startup begin
+2017-11-14 10:57:43.380  INFO 147812 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : 1
+2017-11-14 10:57:43.382  INFO 147812 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Started WebtemplateApplication.Companion in 19.968 seconds (JVM running for 23.046)
+2017-11-14 10:57:43.382  INFO 147812 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : SpringApplication end
+2017-11-14 10:58:00.852  INFO 147812 --- [http-nio-8200-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 10:58:00.853  INFO 147812 --- [http-nio-8200-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-14 10:58:00.884  INFO 147812 --- [http-nio-8200-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 10:58:00.906  INFO 147812 --- [http-nio-8200-exec-1] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:07:45.097  INFO 153528 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Starting WebtemplateApplication.Companion on hwj-L470 with PID 153528 (G:\code\idea\webtemplate\out\production\classes started by HuWeiJian in G:\code\idea\webtemplate)
+2017-11-14 11:07:45.099  INFO 153528 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : No active profile set, falling back to default profiles: default
+2017-11-14 11:07:45.785  INFO 153528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7800b16a: startup date [Tue Nov 14 11:07:45 CST 2017]; root of context hierarchy
+2017-11-14 11:07:50.692  INFO 153528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8200 (http)
+2017-11-14 11:07:50.705  INFO 153528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-14 11:07:50.707  INFO 153528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-14 11:07:50.802  INFO 153528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
+2017-11-14 11:07:50.802  INFO 153528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5026 ms
+2017-11-14 11:07:51.209  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-14 11:07:51.215  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-11-14 11:07:51.215  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-14 11:07:51.215  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-14 11:07:51.215  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-14 11:07:51.216  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-14 11:07:51.216  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-11-14 11:07:51.216  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-11-14 11:07:51.216  INFO 153528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-11-14 11:07:51.998  INFO 153528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-14 11:07:52.012  INFO 153528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-14 11:07:52.112  INFO 153528 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-14 11:07:52.116  INFO 153528 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-14 11:07:52.121  INFO 153528 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-14 11:07:52.183  INFO 153528 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 11:07:52.516  INFO 153528 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-14 11:07:52.931  INFO 153528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-14 11:07:53.634  INFO 153528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7800b16a: startup date [Tue Nov 14 11:07:45 CST 2017]; root of context hierarchy
+2017-11-14 11:07:53.709  INFO 153528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gosuncn.webtemplate.web.IndexController.indexPage(org.springframework.ui.ModelMap)
+2017-11-14 11:07:53.711  INFO 153528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/{content}],methods=[GET]}" onto public com.gosuncn.webtemplate.bean.ApiResult<java.lang.String> com.gosuncn.webtemplate.web.TestController.test(java.lang.String)
+2017-11-14 11:07:53.713  INFO 153528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-14 11:07:53.714  INFO 153528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-14 11:07:53.752  INFO 153528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:07:53.752  INFO 153528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:07:53.778  INFO 153528 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandler
+2017-11-14 11:07:53.804  INFO 153528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:07:54.886  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-11-14 11:07:54.887  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-11-14 11:07:54.887  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.888  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-11-14 11:07:54.888  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.888  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.889  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-11-14 11:07:54.889  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.889  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.890  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-11-14 11:07:54.890  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.891  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-11-14 11:07:54.892  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2017-11-14 11:07:54.893  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.893  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.894  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-11-14 11:07:54.894  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:54.894  INFO 153528 --- [restartedMain] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-11-14 11:07:55.141  INFO 153528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-11-14 11:07:55.322  INFO 153528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-14 11:07:55.334  INFO 153528 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-11-14 11:07:55.464  INFO 153528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8200 (http)
+2017-11-14 11:07:55.468  INFO 153528 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : Startup begin
+2017-11-14 11:07:55.468  INFO 153528 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : 1
+2017-11-14 11:07:55.469  INFO 153528 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Started WebtemplateApplication.Companion in 11.609 seconds (JVM running for 13.291)
+2017-11-14 11:07:55.470  INFO 153528 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : SpringApplication end
+2017-11-14 11:07:57.270  INFO 153528 --- [http-nio-8200-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 11:07:57.270  INFO 153528 --- [http-nio-8200-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-14 11:07:57.299  INFO 153528 --- [http-nio-8200-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2017-11-14 11:07:57.323  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:07:57.324  INFO 153528 --- [http-nio-8200-exec-2] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:08:59.401  INFO 153528 --- [http-nio-8200-exec-3] s.b.a.e.m.MvcEndpointSecurityInterceptor : Full authentication is required to access actuator endpoints. Consider adding Spring Security or set 'management.security.enabled' to false.
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:08:59.413  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:08:59.414  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:08:59.414  INFO 153528 --- [http-nio-8200-exec-3] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:09:04.121  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:09:04.122  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:09:04.122  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:13.969  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:13.969  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:13.969  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:13.969  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:13.969  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:13.970  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:13.970  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:13.970  INFO 153528 --- [http-nio-8200-exec-9] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:14.903  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:14.904  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:14.904  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:14.905  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:14.905  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:14.905  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:14.905  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:14.906  INFO 153528 --- [http-nio-8200-exec-8] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:15.439  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:15.440  INFO 153528 --- [http-nio-8200-exec-1] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:15.663  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:15.663  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:15.664  INFO 153528 --- [http-nio-8200-exec-4] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:15.866  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:15.867  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:15.867  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:15.867  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:15.867  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:15.867  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:15.868  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:15.868  INFO 153528 --- [http-nio-8200-exec-5] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:10:16.079  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:10:16.079  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:10:16.079  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/error
+2017-11-14 11:10:16.079  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:10:16.080  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:10:16.080  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:10:16.080  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:10:16.080  INFO 153528 --- [http-nio-8200-exec-10] c.g.w.interceptor.TokenInterceptor       : preHandle
+2017-11-14 11:20:09.189  INFO 160072 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Starting WebtemplateApplication.Companion on hwj-L470 with PID 160072 (G:\code\idea\webtemplate\out\production\classes started by HuWeiJian in G:\code\idea\webtemplate)
+2017-11-14 11:20:09.190  INFO 160072 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : No active profile set, falling back to default profiles: default
+2017-11-14 11:20:09.560  INFO 160072 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34905d97: startup date [Tue Nov 14 11:20:09 CST 2017]; root of context hierarchy
+2017-11-14 11:20:14.568  INFO 160072 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8200 (http)
+2017-11-14 11:20:14.581  INFO 160072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-14 11:20:14.582  INFO 160072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-14 11:20:14.741  INFO 160072 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring embedded WebApplicationContext
+2017-11-14 11:20:14.742  INFO 160072 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5208 ms
+2017-11-14 11:20:15.073  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-14 11:20:15.079  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-14 11:20:15.079  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-14 11:20:15.080  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-14 11:20:15.080  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-14 11:20:15.080  INFO 160072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2017-11-14 11:20:15.764  INFO 160072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-14 11:20:15.788  INFO 160072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-14 11:20:15.953  INFO 160072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-14 11:20:15.956  INFO 160072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-14 11:20:15.957  INFO 160072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-14 11:20:16.131  INFO 160072 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 11:20:16.664  INFO 160072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-14 11:20:17.917  INFO 160072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-14 11:20:19.599  INFO 160072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34905d97: startup date [Tue Nov 14 11:20:09 CST 2017]; root of context hierarchy
+2017-11-14 11:20:19.713  INFO 160072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.gosuncn.webtemplate.web.IndexController.indexPage(org.springframework.ui.ModelMap)
+2017-11-14 11:20:19.716  INFO 160072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/{content}],methods=[GET]}" onto public com.gosuncn.webtemplate.bean.ApiResult<java.lang.String> com.gosuncn.webtemplate.web.TestController.test(java.lang.String)
+2017-11-14 11:20:19.718  INFO 160072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-14 11:20:19.719  INFO 160072 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-14 11:20:19.771  INFO 160072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:20:19.772  INFO 160072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:20:19.800  INFO 160072 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandler
+2017-11-14 11:20:19.858  INFO 160072 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-14 11:20:20.429  INFO 160072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-11-14 11:20:20.656  INFO 160072 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-14 11:20:20.745  INFO 160072 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8200 (http)
+2017-11-14 11:20:20.752  INFO 160072 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : Startup begin
+2017-11-14 11:20:20.752  INFO 160072 --- [restartedMain] com.gosuncn.webtemplate.common.Startup   : 1
+2017-11-14 11:20:20.754  INFO 160072 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : Started WebtemplateApplication.Companion in 12.119 seconds (JVM running for 16.386)
+2017-11-14 11:20:20.754  INFO 160072 --- [restartedMain] c.g.w.WebtemplateApplication$Companion   : SpringApplication end
+2017-11-14 11:20:24.677  INFO 160072 --- [http-nio-8200-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/web]    : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-14 11:20:24.677  INFO 160072 --- [http-nio-8200-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-14 11:20:24.709  INFO 160072 --- [http-nio-8200-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : http>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : Method=GET
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : RequestURL=http://localhost:8200/web/
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : Protocol=HTTP/1.1
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : CharacterEncoding=UTF-8
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : QueryString= null
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TestInterceptor        : http<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2017-11-14 11:20:24.724  INFO 160072 --- [http-nio-8200-exec-2] c.g.w.interceptor.TokenInterceptor       : preHandle
