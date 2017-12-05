@@ -1,0 +1,5 @@
+#自定义属性
+prairieManage:
+   mapProps:
+    key1: value1
+    key2: value2

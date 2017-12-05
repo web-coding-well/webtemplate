@@ -29,12 +29,14 @@ html5严格校验处理,
 注意项：
 项目一般需要更改包名，更改包名时类中的package可能不会相应更改，需要手动修改，否则项目可能可以编译，但一执行就会
 出现无法预知的错误
+数据库的sql脚本放置在test/test.sql,执行此脚本可以创建测试数据库，使得本demo可以顺利执行，但这部分内容只是为了示例，实际项目当中只作为参考。
 
 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 相关知识点：
+配置外放：https://www.cnblogs.com/xiaoqi/p/6955288.html
 
 apidoc:
 step1:参照官网安装好node.js环境：http://apidocjs.com/
@@ -51,6 +53,7 @@ step4（可选）:使用浏览器插件livereload:http://livereload.com/extensio
 
 
 打包命令(也可直接执行package.bat,之后在build/libs下可查看到打包好的jar)：gradle build -x test
+或者在IDEA右侧的gradle的Tasks下的build的build任务也可打成jar包
 
 
 调出接口测试REST Client：

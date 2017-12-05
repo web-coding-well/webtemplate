@@ -7,7 +7,7 @@ import java.io.InputStreamReader
 /**
  * Created by hwj on 2017/5/25.
  */
-object FileUtil {
+object FileUtil2 {
 
     /**
      * 从文件中读取文本内容

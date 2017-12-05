@@ -6,11 +6,10 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name = "tb_test")
-data class Test(
+@Table(name = "tb_access")
+data class AccessEntity(
         @Id
-        var id:Long?=null,
-        @Column(name="test",nullable = false)
-        var test:Long?=null
-
+        var id:Long?=0,
+        @Column(name="name")
+        var name:String?=""
 )

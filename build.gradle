@@ -51,8 +51,12 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	//网络请求库，不需要可以注释
 	compile 'com.squareup.retrofit2:retrofit:2.3.0'
 	compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+	//json解析库，不需要可以注释
 	compile 'com.google.code.gson:gson:2.8.0'
+	//html格式非严格校验
 	compile('net.sourceforge.nekohtml:nekohtml:1.9.22')
 }

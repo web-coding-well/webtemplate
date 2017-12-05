@@ -6,9 +6,9 @@ logging:
 spring:
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://172.16.11.111:3306/hpm?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useOldAliasMetadataBehavior=true
+      url: jdbc:mysql://192.168.39.128:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useOldAliasMetadataBehavior=true
       username: root
-      password: video
+      password: root
 
   devtools:
     restart:
@@ -29,6 +29,9 @@ spring:
     cache: false
     # 默认html5对格式非常严格，LEGACYHTML5配合nekohtml可解决这个问题
     mode: LEGACYHTML5
+  profiles:
+    #local,config表示引入配置文件application.yml,application-config.yml,其中config是可以自定义为其他名称的
+    active: local,config
 
 #自定义属性
 custom:

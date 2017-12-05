@@ -1,6 +1,7 @@
 package com.gosuncn.webtemplate.web
 
 import com.gosuncn.webtemplate.bean.ApiResult
+import com.gosuncn.webtemplate.domain.UserRepo
 import com.gosuncn.webtemplate.service.TestService
 import com.gosuncn.webtemplate.utils.ApiResultUtil
 import org.springframework.beans.factory.annotation.Autowired
@@ -18,6 +19,8 @@ class TestController {
 
     @Autowired
     lateinit var testService:TestService
+    @Autowired
+    lateinit var userRepo: UserRepo
 
     /**
      * @api {get} /web/test/:content 测试
@@ -47,4 +50,11 @@ class TestController {
     ): ApiResult<String> {
         return ApiResultUtil.success(testService.test(content))
     }
+
+    @GetMapping(value = "/getUserRoles")
+    fun getUserRoles(
+    ) :Any{
+        return ApiResultUtil.success(userRepo.getUserRoles())
+    }
+
 }
